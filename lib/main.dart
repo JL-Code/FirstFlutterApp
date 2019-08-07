@@ -1,3 +1,5 @@
+import 'package:first_flutter_app/list_refresh_to_stream.dart';
+import 'package:first_flutter_app/stream_builder_demo.dart';
 import 'package:flutter/material.dart';
 import './random_words.dart';
 
@@ -29,7 +31,7 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primaryColor: Colors.white,
       ),
-      home: new RandomWords(),
+      home: ListRefreshToStream(),
     );
   }
 }

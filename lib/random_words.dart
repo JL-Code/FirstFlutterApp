@@ -22,10 +22,12 @@ class _RandomWordsState extends State<RandomWords> {
 
   /// build a suggestion words ListView Widget
   Widget _buildSuggestions() {
+    print("_buildSuggestions");
     return new ListView.builder(
       /// 设置
       padding: EdgeInsets.all(16),
       itemBuilder: (BuildContext context, int i) {
+        print("itemBuilder：$i");
         // final wordPair = new WordPair.random();
         // 在每一列之前，添加一个1像素高的分隔线widget
         if (i.isOdd) return new Divider();
